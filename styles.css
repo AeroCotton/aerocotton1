@@ -521,3 +521,186 @@ body {
         text-align: center;
     }
 }
+/* About Section */
+.about-section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Journey Section */
+.journey-section {
+    background-color: #292929;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.journey-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* What We Do - Features Grid */
+.what-we-do {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Why Choose Us - Benefits Grid */
+.why-choose-us {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    background: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+.benefit-item i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Vision & Mission Section */
+.vision-mission {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.vm-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.vm-item {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vm-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+.vm-item i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Call to Action */
+.cta-section {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: white;
+    color: #007bff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-grid, .benefits-grid, .vm-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item, .benefit-item, .vm-item {
+        width: 90%;
+    }
+}
