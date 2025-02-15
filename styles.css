@@ -70,7 +70,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ddd;
+    color: #ffc400;
 }
 
 .shop-btn {
@@ -84,7 +84,7 @@ body {
 }
 
 .shop-btn:hover {
-    background-color: #0056b3;
+    background-color: #ffc400;
 }
 
 /* Hero Section */
@@ -129,7 +129,7 @@ body {
 }
 
 .explore-btn:hover {
-    background-color: #0056b3;
+    background-color: #ffc400;
 }
 
 
@@ -287,7 +287,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #007bff;
+    color: #ffc400;
 }
 
 .footer-contact p {
@@ -353,7 +353,7 @@ body {
 }
 
 .popup-content button:hover {
-    background: #0056b3;
+    background: #ffc400;
 }
 /* ==== PC View: Social Media Sidebar ==== */
 .social-sidebar {
@@ -421,7 +421,7 @@ body {
     }
 
     .social-btn:hover {
-        background-color: #0056b3;
+        background-color: #ffc400;
         transform: scale(1.1);
     }
 }
@@ -452,7 +452,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    color: black;
+    color: red;
     transition: color 0.3s ease;
 }
 
@@ -530,11 +530,13 @@ body {
 }
 
 .about-section h2 {
+    color: #007bff;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .about-section p {
+    color: white;
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto 30px;
@@ -549,9 +551,18 @@ body {
 }
 
 .journey-section h2 {
+    color: #007bff;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+.journey-section p {
+    color: white;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+
 
 /* What We Do - Features Grid */
 .what-we-do {
@@ -560,7 +571,11 @@ body {
     text-align: center;
     padding: 60px 10%;
 }
-
+.what-we-do h2 {
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 .features-grid {
     display: flex;
     justify-content: center;
@@ -596,7 +611,11 @@ body {
     text-align: center;
     padding: 60px 10%;
 }
-
+.why-choose-us h2 {
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 .benefits-grid {
     display: flex;
     justify-content: center;
@@ -631,7 +650,11 @@ body {
     text-align: center;
     padding: 60px 10%;
 }
-
+.vision-mission h2 {
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 .vm-grid {
     display: flex;
     justify-content: center;
