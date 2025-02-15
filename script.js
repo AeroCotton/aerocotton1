@@ -24,3 +24,12 @@ function openPopup() {
 function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
+// Open Social Media Popup
+function openSocialPopup() {
+    document.getElementById("social-popup").style.display = "block";
+}
+
+// Close Social Media Popup
+function closeSocialPopup() {
+    document.getElementById("social-popup").style.display = "none";
+}

@@ -355,3 +355,162 @@ body {
 .popup-content button:hover {
     background: #0056b3;
 }
+/* ==== PC View: Social Media Sidebar ==== */
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon.facebook { background-color: #1877F2; }
+.social-icon.twitter { background-color: #1DA1F2; }
+.social-icon.instagram { background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); }
+.social-icon.linkedin { background-color: #0077B5; }
+
+.social-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* ==== Hide Social Button in PC, Show in Mobile ==== */
+.social-btn {
+    display: none; /* Default: Hidden in PC */
+}
+
+/* Show Social Button Only in Mobile */
+@media (max-width: 768px) {
+    .social-sidebar {
+        display: none; /* Hide sidebar in mobile */
+    }
+
+    .social-btn {
+        display: flex; /* Force show in mobile */
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        background-color: #007bff;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 10px; /* Square shape */
+        font-size: 24px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .social-btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.1);
+    }
+}
+
+
+
+/* ==== Mobile View: Social Media Popup ==== */
+.social-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 260px; /* Reduced width for a compact look */
+}
+
+/* Close (X) Button */
+.close-popup {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.close-popup:hover {
+    color: red; /* Changes to red when hovered */
+}
+
+/* Popup Content */
+.social-popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 15px; /* Space below the close button */
+}
+
+/* Social Media Buttons */
+.popup-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.popup-icon.facebook { background-color: #1877F2; color: white; }
+.popup-icon.twitter { background-color: #1DA1F2; color: white; }
+.popup-icon.instagram { background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); color: white; }
+.popup-icon.linkedin { background-color: #0077B5; color: white; }
+
+.popup-icon:hover {
+    filter: brightness(1.2);
+}
+
+.social-popup button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.social-popup button:hover {
+    background: #0056b3;
+}
+
+/* ==== Hide Sidebar on Mobile, Show Popup Button ==== */
+@media (max-width: 768px) {
+    .social-sidebar {
+        display: none;
+    }
+    
+    .social-btn {
+        display: block;
+    }
+}
