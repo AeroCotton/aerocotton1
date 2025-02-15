@@ -542,7 +542,7 @@ body {
 
 /* Journey Section */
 .journey-section {
-    background-color: #292929;
+    background-color: #1e1e1e;
     color: #ffffff;
     text-align: center;
     padding: 60px 10%;
@@ -555,7 +555,7 @@ body {
 
 /* What We Do - Features Grid */
 .what-we-do {
-    background-color: #121212;
+    background-color: #1e1e1e;
     color: white;
     text-align: center;
     padding: 60px 10%;
@@ -626,7 +626,7 @@ body {
 
 /* Vision & Mission Section */
 .vision-mission {
-    background-color: #292929;
+    background-color: #1e1e1e;
     color: white;
     text-align: center;
     padding: 60px 10%;
@@ -640,7 +640,7 @@ body {
 }
 
 .vm-item {
-    background: #1e1e1e;
+    background: #292929;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -679,7 +679,7 @@ body {
 
 .cta-btn {
     background-color: white;
-    color: #007bff;
+    color: #ffc400;
     padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
@@ -689,7 +689,7 @@ body {
 }
 
 .cta-btn:hover {
-    background-color: #0056b3;
+    background-color: #ffbb00;
     color: white;
 }
 
