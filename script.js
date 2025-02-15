@@ -33,3 +33,28 @@ function openSocialPopup() {
 function closeSocialPopup() {
     document.getElementById("social-popup").style.display = "none";
 }
+// Testimonials Sliding Effect with Animation
+let currentTestimonial = 0;
+const testimonials = document.querySelectorAll(".testimonial");
+
+function showTestimonial(index) {
+    testimonials.forEach((t, i) => {
+        t.classList.remove("active");
+        if (i === index) {
+            setTimeout(() => t.classList.add("active"), 100);
+        }
+    });
+}
+
+function nextTestimonial() {
+    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+    showTestimonial(currentTestimonial);
+}
+
+function prevTestimonial() {
+    currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentTestimonial);
+}
+
+// Show first testimonial on load
+showTestimonial(currentTestimonial);
