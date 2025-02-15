@@ -232,7 +232,7 @@ body {
 }
 
 .stat {
-    background: #333;
+    background: #FF5733;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -896,4 +896,61 @@ body {
 .testimonial-buttons button:hover {
     background: palegreen;
     transform: scale(1.1);
+}
+/* Subscribe Section */
+.subscribe-section {
+    background-color: #00A8E8; /* Light greenish background */
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.subscribe-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.underline {
+    width: 50px;
+    height: 2px;
+    background: white;
+    border: none;
+    margin: 8px auto;
+}
+
+.subscribe-section p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.subscribe-form button {
+    background-color: #FFD700; /* Light peach */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.subscribe-form button:hover {
+    background-color: #ffc400;
 }
