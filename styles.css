@@ -89,6 +89,7 @@ body {
 
 /* Hero Section */
 .hero-section {
+    background-color: black;
     position: relative;
     height: 100vh;
     display: flex;
@@ -117,9 +118,15 @@ body {
     z-index: 1; /* Ensures text appears above the image */
 }
 
+.hero-content p {
+    color: white;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
 /* Explore Collection Button - Keep It Same */
 .explore-btn {
-    background-color: #FFD700;
+    background-color: #00A8E8;
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
@@ -129,7 +136,7 @@ body {
 }
 
 .explore-btn:hover {
-    background-color: #ffc400;
+    background-color: #0086b3;
 }
 
 
@@ -198,19 +205,20 @@ body {
 
 /* Introduction Section */
 .introduction {
-    background-color: #1e1e1e;
+    background-color: white;
     color: #ffffff;
     text-align: center;
     padding: 50px 10%;
 }
 
 .introduction h2 {
-    color: #FFD700;
+    color: #1e1e1e;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .introduction p {
+    color: #1e1e1e;
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto 30px;
@@ -233,7 +241,7 @@ body {
 
 .stat h3 {
     font-size: 2rem;
-    color: #FFD700;
+    color: white;
 }
 
 .stat p {
@@ -262,13 +270,14 @@ body {
 }
 
 .footer-brand p {
+    color: white;
     font-size: 1rem;
     max-width: 300px;
 }
 
 .footer-links h3,
 .footer-contact h3 {
-    color: #FFD700;
+    color: white;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -289,10 +298,11 @@ body {
 }
 
 .footer-links a:hover {
-    color: #ffc400;
+    color: #B0B0B0;
 }
 
 .footer-contact p {
+    color: white;
     font-size: 1rem;
     margin: 5px 0;
 }
@@ -525,20 +535,20 @@ body {
 }
 /* About Section */
 .about-section {
-    background-color: #1e1e1e;
+    background-color: white;
     color: #ffffff;
     text-align: center;
     padding: 60px 10%;
 }
 
 .about-section h2 {
-    color: #FFD700;
+    color: #1e1e1e;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .about-section p {
-    color: white;
+    color: #1e1e1e;
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto 30px;
@@ -546,19 +556,19 @@ body {
 
 /* Journey Section */
 .journey-section {
-    background-color: #1e1e1e;
+    background-color: white;
     color: #ffffff;
     text-align: center;
     padding: 60px 10%;
 }
 
 .journey-section h2 {
-    color: #FFD700;
+    color: #1e1e1e;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 .journey-section p {
-    color: white;
+    color: #1e1e1e;
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto 30px;
@@ -568,15 +578,21 @@ body {
 
 /* What We Do - Features Grid */
 .what-we-do {
-    background-color: #1e1e1e;
+    background-color: white;
     color: white;
     text-align: center;
     padding: 60px 10%;
 }
 .what-we-do h2 {
-    color: #FFD700;
+    color: #1e1e1e;
     font-size: 2.5rem;
     margin-bottom: 20px;
+}
+.what-we-do h3,p {
+    color: #1e1e1e;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
 }
 .features-grid {
     display: flex;
@@ -587,7 +603,7 @@ body {
 }
 
 .feature-item {
-    background: #292929;
+    background: wheat;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -608,15 +624,21 @@ body {
 
 /* Why Choose Us - Benefits Grid */
 .why-choose-us {
-    background-color: #1e1e1e;
+    background-color: white;
     color: white;
     text-align: center;
     padding: 60px 10%;
 }
 .why-choose-us h2 {
-    color: #FFD700;
+    color: #1e1e1e;
     font-size: 2.5rem;
     margin-bottom: 20px;
+}
+.why-choose-us h3,p {
+    color: #1e1e1e;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
 }
 .benefits-grid {
     display: flex;
@@ -626,7 +648,7 @@ body {
 }
 
 .benefit-item {
-    background: #292929;
+    background: wheat;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -647,15 +669,21 @@ body {
 
 /* Vision & Mission Section */
 .vision-mission {
-    background-color: #1e1e1e;
+    background-color: white;
     color: white;
     text-align: center;
     padding: 60px 10%;
 }
 .vision-mission h2 {
-    color: #FFD700;
+    color: #1e1e1e;
     font-size: 2.5rem;
     margin-bottom: 20px;
+}
+.vision-mission h3,p {
+    color: #1e1e1e;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
 }
 .vm-grid {
     display: flex;
@@ -665,7 +693,7 @@ body {
 }
 
 .vm-item {
-    background: #292929;
+    background: wheat;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -693,12 +721,13 @@ body {
 }
 
 .cta-section h2 {
-    color: #FFD700;
+    color: white;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .cta-section p {
+    color: white;
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
@@ -731,14 +760,14 @@ body {
 }
 /* Our Products Section */
 .our-products {
-    background-color: #1e1e1e;
+    background-color: #f5f5f5;
     color: white;
     text-align: center;
     padding: 60px 10%;
 }
 
 .our-products h2 {
-    color: #FFD700;
+    color: #1e1e1e;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
