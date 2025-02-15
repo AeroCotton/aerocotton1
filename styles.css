@@ -408,11 +408,11 @@ body {
         right: 15px;
         background-color: #007bff;
         color: white;
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         border: none;
         border-radius: 10px; /* Square shape */
-        font-size: 24px;
+        font-size: 18px;
         cursor: pointer;
         transition: background 0.3s ease, transform 0.2s ease;
         justify-content: center;
@@ -512,5 +512,12 @@ body {
     
     .social-btn {
         display: block;
+    }
+}
+@media (max-width: 768px) {
+    .social-popup-content h3 {
+        color: #007bff; /* Change this to any color you want */
+        font-size: 20px;
+        text-align: center;
     }
 }
