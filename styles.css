@@ -729,3 +729,50 @@ body {
         width: 90%;
     }
 }
+/* Our Products Section */
+.our-products {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.our-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.our-products p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* E-Commerce Icons */
+.ecommerce-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ecom-icon img {
+    width: 40px;  /* Adjust size */
+    height: auto;
+    transition: none;
+}
+
+.ecom-icon:hover img {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ecommerce-icons {
+        gap: 15px;
+    }
+
+    .ecom-icon img {
+        width: 60px; /* Smaller size for mobile */
+    }
+}
