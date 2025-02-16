@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit';
+    background: linear-gradient(#ffdad5,#fff7f9);
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    width: 120px;
+    height: 5px;
+    background: #a363aa;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    font-family: 'Outfit';
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    font-family: 'Outfit';
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    font-family: inherit;
+    color: inherit;
+}
+.contact-inputs:focus{
+    border: 2px solid #a363aa;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+    font-family: 'Outfit';
+}
+.contact-left button{
+    font-family: 'Outfit';
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;   
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 500px;
+}
+.contact-left button:hover{
+    background: linear-gradient(270deg,#fa6d86,#ff994f);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px pink;
+}
+.contact-left button:active{
+    transform: scale(1);
+    box-shadow: 0 5px 15px pink;
+}
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}

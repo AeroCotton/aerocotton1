@@ -7,6 +7,7 @@
     <link rel="icon" href="images/aerocotton_logo-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 
     <script defer src="script.js"></script> <!-- JavaScript file for menu toggle -->
 </head>
@@ -39,7 +40,23 @@
             <p>Get in touch with our support team for inquiries, feedback, and assistance.</p>
 
     </header>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="4807c5d4-19b6-4c59-9c38-f8b3bf78e212">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs"required>
+            <input type="email" name="email" placeholder="Your E-mail" class="contact-inputs"required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="images/arrow_icon.png" alt="Design"></button>
 
+        </form>
+        <div class="contact-right">
+            <img src="images/right_img.png" alt="Background Image">
+        </div>
+    </div>
     <!-- Popup Modal -->
     <div id="popup" class="popup-container">
         <div class="popup-content">
