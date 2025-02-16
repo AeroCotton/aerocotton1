@@ -6,15 +6,18 @@ document.addEventListener("DOMContentLoaded", function () {
         menuToggle.addEventListener("click", function () {
             navRight.classList.toggle("active");
 
-            // Toggle menu icon between ☰ and ✖
+            // Rotate menu button for animation
             if (navRight.classList.contains("active")) {
                 menuToggle.innerHTML = "✖"; // Change to close icon
+                menuToggle.style.transform = "rotate(90deg)";
             } else {
                 menuToggle.innerHTML = "☰"; // Change back to hamburger
+                menuToggle.style.transform = "rotate(0deg)";
             }
         });
     }
 });
+
 // Function to open the popup modal
 function openPopup() {
     document.getElementById("popup").style.display = "flex";
