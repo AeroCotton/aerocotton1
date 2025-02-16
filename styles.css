@@ -253,24 +253,30 @@ body {
     justify-content: center;
     gap: 50px;
     margin-top: 20px;
+    flex-wrap: wrap;
+    
 }
 
 .stat {
-    background: #FF5733;
+    background: wheat;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     min-width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.stat:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
 .stat h3 {
     font-size: 2rem;
-    color: white;
+    color: #1e1e1e;
 }
 
 .stat p {
     font-size: 1rem;
-    color: #ddd;
+    color: #1e1e1e;
 }
 
 /* Footer Section */
