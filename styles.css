@@ -1067,3 +1067,67 @@ body {
 .popup-content button:hover {
     background: #0056b3;
 }
+
+/* Help */
+/* FAQs Section */
+.faqs, .terms, .privacy-policy, .contact-support {
+    background: #f5f5f5;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.faqs h2, .terms h2, .privacy-policy h2, .contact-support h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+}
+
+.faq {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+.faq h3 {
+    color: #5a5a5a;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    color: #5a5a5a;
+}
+
+/* Terms & Privacy Policy */
+.terms ul, .privacy-policy ul {
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+.terms li, .privacy-policy li {
+    color: #5a5a5a;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Contact Support */
+.contact-support p {
+    font-size: 1.1rem;
+}
+
+.contact-support a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-support a:hover {
+    color: #0077B5;
+}
