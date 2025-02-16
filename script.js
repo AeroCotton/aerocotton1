@@ -68,3 +68,19 @@ function prevTestimonial() {
 
 // Show first testimonial on load
 showTestimonial(currentTestimonial);
+
+
+
+
+// Close Popup
+function closeProductPopup() {
+    document.getElementById("product-popup").style.display = "none";
+}
+// Function to show alert before navigating to product.html
+function showProductPopup(event) {
+    if (!window.location.href.includes("product.html")) { 
+        event.preventDefault(); // Prevent immediate navigation
+        alert("🛑 Note : Payments are not available on this website. You can only view products.\n\n📞 For placing orders, please contact us.");
+        window.location.href = event.target.href; // Redirect to product.html after alert
+    }
+}

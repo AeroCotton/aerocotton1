@@ -25,7 +25,7 @@
             <div class="nav-right">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Products</a></li>
+                    <li><a href="product.html" onclick="showProductPopup(event)">Products</a></li>
                     <li><a href="about.html">About</a></li>                    
                     <li><a href="help.html">Help</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -33,6 +33,12 @@
                 <a href="#" class="shop-btn" onclick="openPopup()">Shop Now</a>
             </div>
         </nav>
+        <div class="hero-content">
+            <h1>Products</h1>
+            <p>Pure Cotton, Perfect Quality – Explore Our Exclusive Collection !</p>
+            
+        </div>
+
     </header>
 
     <!-- Popup Modal -->
@@ -43,6 +49,66 @@
             <button onclick="closePopup()">Close</button>
         </div>
     </div>
+
+
+     <!-- Product Grid Section -->
+     <section class="products">
+        <div class="product-container">
+            
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="images/cotton-towel.jpeg" alt="Cotton Towels">
+                <h3>Pure Cotton Towels</h3>
+                <p>Soft, absorbent, and durable – our premium cotton towels offer ultimate comfort and quality.</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="images/bedsheet.jpg" alt="Cotton Bedsheet">
+                <h3>Luxury Cotton Bedsheets</h3>
+                <p>Soft, breathable, and durable – experience ultimate comfort with our premium cotton bedsheets.</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="images/curtain.jpeg" alt="Cotton Curtain">
+                <h3>Soft Cotton Curtain</h3>
+                <p>Highly absorbent and soft cotton curtain, perfect for everyday use.</p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="images/table-cloth.jpeg" alt="Cotton Table Cloth">
+                <h3>Premium Dining Cloth</h3>
+                <p>Elegant and durable cotton dining table cloths – perfect for a stylish and cozy dining experience.</p>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product">
+                <img src="images/cushions.jpeg" alt="Cotton Cushions">
+                <h3>Decorative Cotton Cushinos</h3>
+                <p>Soft, stylish, and cozy cotton cushions – perfect for ultimate comfort and elegance.</p>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product">
+                <img src="images/apron.jpeg" alt="Cotton Aprons">
+                <h3>Pure Cotton Apron</h3>
+                <p>Soft, durable, and stylish cotton apron – perfect for kitchen and workspace use.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Popup Modal for Products -->
+    <div id="product-popup" class="popup-container">
+        <div class="popup-content">
+            <h2>Notice</h2>
+            <p>You can't purchase any of our products unless seen.</p>
+            <button onclick="closeProductPopup()">Close</button>
+        </div>
+    </div>
+
 
     <!-- Social Media Sidebar (For PC) -->
 <div class="social-sidebar">
@@ -98,7 +164,7 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Products</a></li>
+                    <li><a href="product.html" onclick="showProductPopup(event)">Products</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="help.html">Help</a></li>
                     <li><a href="contact.html">Contact</a></li>

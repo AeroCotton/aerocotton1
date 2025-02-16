@@ -117,7 +117,10 @@ body {
     position: relative;
     z-index: 1; /* Ensures text appears above the image */
 }
-
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
 .hero-content p {
     color: white;
     font-size: 1.2rem;
@@ -983,4 +986,84 @@ body {
 
 .subscribe-form button:hover {
     background-color: #ffc400;
+}
+/* Product Grid */
+.products {
+    padding: 50px 10%;
+    background-color: #f5f5f5;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background: white;
+    box-shadow: 0px 0px 15px lightgray;   
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    width: 75%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    color: #1e1e1e;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #5a5a5a;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px lightgray;
+}
+
+/* Popup Modal */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+}
+
+.popup-content button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup-content button:hover {
+    background: #0056b3;
 }
