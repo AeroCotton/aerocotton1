@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    font-family: Arial, sans-serif;
     background: linear-gradient(#ffdad5,#fff7f9);
 }
 .contact-container{
@@ -33,7 +34,7 @@ body{
     margin-bottom: 20px;
 }
 .contact-inputs{
-    font-family: 'Outfit';
+    font-family: Arial, sans-serif;
     width: 400px;
     height: 50px;
     border: none;
@@ -44,22 +45,22 @@ body{
     border-radius: 50px;
 }
 .contact-left textarea{
-    font-family: 'Outfit';
+    font-family: Arial, sans-serif;
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
-    font-family: inherit;
-    color: inherit;
+    font-family: Arial, sans-serif;
+    
 }
 .contact-inputs:focus{
     border: 2px solid #a363aa;
 }
 .contact-inputs::placeholder{
     color: #a9a9a9;
-    font-family: 'Outfit';
+    font-family: Arial, sans-serif;
 }
 .contact-left button{
-    font-family: 'Outfit';
+    font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     padding: 15px 30px;
@@ -93,14 +94,5 @@ body{
     }
     .contact-right{
         display: none;
-    }
-    .contact-left button:hover{
-        background: linear-gradient(270deg,#fa6d86,#ff994f);
-        transform: scale(1.1);
-        box-shadow: 0 5px 15px pink;
-    }
-    .contact-left button:active{
-        transform: scale(1);
-        box-shadow: 0 5px 15px pink;
     }
 }
