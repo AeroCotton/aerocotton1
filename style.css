@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Outfit';
     background: linear-gradient(#ffdad5,#fff7f9);
 }
 .contact-container{
@@ -94,5 +93,14 @@ body{
     }
     .contact-right{
         display: none;
+    }
+    .contact-left button:hover{
+        background: linear-gradient(270deg,#fa6d86,#ff994f);
+        transform: scale(1.1);
+        box-shadow: 0 5px 15px pink;
+    }
+    .contact-left button:active{
+        transform: scale(1);
+        box-shadow: 0 5px 15px pink;
     }
 }
