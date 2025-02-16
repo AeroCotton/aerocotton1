@@ -339,6 +339,14 @@ body {
     font-size: 1rem;
     margin: 5px 0;
 }
+.footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-contact a:hover {
+    color: #B0B0B0;
+}
 
 .footer-bottom {
     margin-top: 20px;
