@@ -365,13 +365,13 @@ body {
 }
 
 .popup-content button:hover {
-    background: #ffc400;
+    background: #0056b3;
 }
 /* ==== PC View: Social Media Sidebar ==== */
 .social-sidebar {
     position: fixed;
     top: 50%;
-    left: 10px;
+    left: 19px;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
@@ -383,8 +383,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     text-decoration: none;
     font-size: 20px;
@@ -433,7 +433,7 @@ body {
     }
 
     .social-btn:hover {
-        background-color: #ffc400;
+        background-color: #0056b3;
         transform: scale(1.1);
     }
 }
@@ -464,7 +464,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    color: red;
+    color: black;
     transition: color 0.3s ease;
 }
 

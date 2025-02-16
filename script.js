@@ -33,15 +33,22 @@ function openSocialPopup() {
 function closeSocialPopup() {
     document.getElementById("social-popup").style.display = "none";
 }
-// Testimonials Sliding Effect with Animation
+// Testimonials Sliding Effect with Ultra-Smooth Animation
 let currentTestimonial = 0;
 const testimonials = document.querySelectorAll(".testimonial");
 
 function showTestimonial(index) {
     testimonials.forEach((t, i) => {
-        t.classList.remove("active");
+        t.style.transition = "opacity 1s ease-in-out, transform 1s ease-in-out"; // Smoothest transition
+
         if (i === index) {
-            setTimeout(() => t.classList.add("active"), 100);
+            t.classList.add("active");
+            t.style.opacity = "1"; // Fade in
+            t.style.transform = "translateY(0) scale(1)"; // Slide & scale effect
+        } else {
+            t.classList.remove("active");
+            t.style.opacity = "0"; // Fade out
+            t.style.transform = "translateY(30px) scale(0.95)"; // Move down & shrink slightly
         }
     });
 }
